@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="AsthmaApp.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    
+    <%--Template Header--%>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <%--<title></title>--%>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" />
+
+
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <%--Navigation Menus--%>
+    <div class="fh5co-loader"></div>
+
+    
+
+    <form id="form1" runat="server">
+        <asp:scriptmanager runat="server"></asp:scriptmanager>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+    <%--Footer section --%>
+    <div class="container-wrap">
+        <footer id="fh5co-footer" role="contentinfo">
+            <div class="row">
+               <%-- <div class="col-md-3 fh5co-widget">
+                    <h4>About Asthma Alerts</h4>
+                    <p>
+                        About 2 million people in Australia suffer from Asthma. Most of them are kids. Asthma Alert helps parents and school teachers in keeping track
+                    of the weather details and understand their impact on the severity of an asthma attack.
+                    </p>
+                </div>--%>
+             <%--   <div class="col-md-3 col-md-push-1">
+                    <h4>Latest Posts</h4>
+                    <ul class="fh5co-footer-links">
+                        <li><a href="https://mahara.infotech.monash.edu.au/mahara/view/view.php?t=fCeWTKi7Ok1RSXJhjUE8">Follow the latest project updates</a></li>
+                        <li><a href="#">100+ Free Download Templates</a></li>
+                        <li><a href="#">Neat is now available</a></li>
+                        <li><a href="#">Download 1000+ icons</a></li>
+                        <li><a href="#">Big Deal for this month of March, Join Us here</a></li>
+                    </ul>
+                </div>--%>
+
+              <%--  <div class="col-md-3 col-md-push-1">
+                    <h4>Links</h4>
+                    <ul class="fh5co-footer-links">
+                        <li><a href="#">Home</a></li>
+                       <li><a href="#">Work</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>--%>
+
+<%--                <div class="col-md-3">
+                    <h4>Contact Information</h4>
+                    <ul class="fh5co-footer-links">
+                        <li>900 Dandenong Rd, 
+                            <br>
+                            Caulfield East VIC 3145</li>
+                        <li><a href="tel://0410 098 786">+61410 098 786</a></li>
+                        <li><a href="mailto:mbil13@student.monash.edu">326P@BullsEye.com</a></li>
+                        <li><a href="https://mahara.infotech.monash.edu.au/mahara/view/view.php?t=fCeWTKi7Ok1RSXJhjUE8">Find Us </a></li>
+                    </ul>
+                </div>--%>
+
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <small class="block">Copyright &copy; 2017.BullsEye All rights reserved.</small>
+                    </p>
+                    <p>
+                        <ul class="fh5co-social-icons">
+                            <li><a href="https://mahara.infotech.monash.edu.au/mahara/view/view.php?t=fCeWTKi7Ok1RSXJhjUE8"><i class="icon-twitter"></i></a></li>
+                            <li><a href="https://mahara.infotech.monash.edu.au/mahara/view/view.php?t=fCeWTKi7Ok1RSXJhjUE8"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://mahara.infotech.monash.edu.au/mahara/view/view.php?t=fCeWTKi7Ok1RSXJhjUE8"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="https://mahara.infotech.monash.edu.au/mahara/view/view.php?t=fCeWTKi7Ok1RSXJhjUE8"><i class="icon-dribbble"></i></a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- END container-wrap -->
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+    </div>
+
+
+
+    
+
+</body>
+</html>

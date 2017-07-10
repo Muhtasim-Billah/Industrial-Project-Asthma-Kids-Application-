@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Home.aspx" title="Home"  description="This is the default page">
+    
+    <siteMapNode url="~/Locked/DailyLogging.aspx" title="Daily Logging"  description="" />
+    <siteMapNode url="~/Locked/NotToday.aspx" title="Not Today"  description="" />
+    <siteMapNode url="~/Locked/Today.aspx" title="Today"  description="" />
+    <siteMapNode url="~/Locked/Results.aspx" title="Results"  description="" />
+  </siteMapNode>
+  
+
+  
+
+</siteMap>

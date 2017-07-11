@@ -67,22 +67,17 @@ namespace AsthmaApp
                 int severityLevel = 0;
 
 
-                string appId = "5af2545a7094a931a66428bf573acfe7";
-                string url = string.Format("http://api.openweathermap.org/data/2.5/forecast/daily?q={0}&units=metric&cnt=1&APPID={1}", concatePlace.Trim(), appId);
-                //string url = string.Format("http://api.openweathermap.org/data/2.5/weather?id={1}", concatePlace.Trim(), appId);
+                string appId = "KEY";
+                string url = string.Format("API.....", concatePlace.Trim(), appId);
+                
                 using (WebClient client = new WebClient())
                 {
                     string json = client.DownloadString(url);
 
-                    WeatherInfo weatherInfo = (new JavaScriptSerializer()).Deserialize<WeatherInfo>(json);
-                    imgWeatherIcon.ImageUrl = string.Format("http://openweathermap.org/img/w/{0}.png", weatherInfo.List[0].Weather[0].Icon);
-                    lblCity_Country.Text = ""; /*changes 5*/
-                    lblCity_Country.Text = weatherInfo.City.Name + "," + weatherInfo.City.Country;
-                    imgCountryFlag.ImageUrl = string.Format("http://openweathermap.org/images/flags/{0}.png", weatherInfo.City.Country.ToLower());
-                    lblDescription.Text = weatherInfo.List[0].Weather[0].Description;
-                    //imgWeatherIcon.ImageUrl = string.Format("http://openweathermap.org/img/w/{0}.png", weatherInfo.List[0].Weather[0].Icon);
-                    lblTempMin.Text = string.Format("{0}°С", Math.Round(weatherInfo.List[0].Temp.Min, 1));
-                    lblTempMax.Text = string.Format("{0}°С", Math.Round(weatherInfo.List[0].Temp.Max, 1));
+                    WeatherInfo weatherInfo = //CODE IS HIDDEN;
+                    //CODE IS HIDDEN HERE
+                    
+                    
                     lblTempDay.Text = string.Format("{0}°С", Math.Round(weatherInfo.List[0].Temp.Day, 1));
                     lblTempNight.Text = string.Format("{0}°С", Math.Round(weatherInfo.List[0].Temp.Night, 1));
 
